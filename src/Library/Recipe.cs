@@ -9,6 +9,12 @@ using System.Collections;
 
 namespace Full_GRASP_And_SOLID.Library
 {
+
+    /// <summary>
+    /// Para calcular el costo total de producción es necesario saber el precio de cada paso necesario para hacer la receta,
+    /// la unica clase que conoce toda esta informacion es recipe, por lo tanto, según expert, esta es la clase correcta
+    /// para la responsabilidad de calcular el total.
+    /// </summary>
     public class Recipe
     {
         private ArrayList steps = new ArrayList();
